@@ -1,0 +1,21 @@
+.calculator_heading{
+
+	background-color: brown;
+	text-align: center;
+	height: 50px;
+	padding-top: 20px;
+	color: white;
+}
+
+.input_table{
+	border: 2px solid brown;
+	margin: auto;
+	padding: 10px;
+	border-collapse: ;
+}
+
+input{
+	border-radius: 10px;
+	border-color: 2px solid black ;
+	padding: 10px;
+}

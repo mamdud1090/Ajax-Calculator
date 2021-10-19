@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A simple calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="calculation.js"></script>
+</head>
+<body>
+
+	<h2 class="calculator_heading">Dolon's Ajax Calculator</h2>
+
+	<form action="" method="GET" name="form_calculator" id="myForm">
+		
+		<table class="input_table">
+			
+			<tr>
+				<td>Enter first value: </td>
+				<td><input type="text" name="first_value"  placeholder="Enter first value"></td>			
+			</tr>
+			<tr>
+				<td>Enter second value: </td>
+				<td><input type="text" name="second_value"  placeholder="Enter second value"></td>			
+			</tr>
+			<tr>
+				<td>					
+					Addition:
+					<input type="radio"
+					name="operator" 
+					value="add" 
+					value="O" 
+					onChange="calc(this.value);"> <br>
+
+					Subtraction :
+					<input type="radio" 
+					name="operator"
+					value="sub" 
+					value="O" 
+					onChange="calc(this.value);" > <br>
+
+					Multiplication:
+					<input type="radio" 
+					name="operator"
+					value="mul" 
+					value="O" 
+					onChange="calc(this.value);"> <br>
+
+					Divide:
+					<input type="radio" 
+					name="operator"
+					value="div" 
+					value="O" 
+					onChange="calc(this.value);"> <br>
+
+					<!-- <input type="button" class="btn btn-success" value="Reset" name="reset" onclick="location.reload();"> -->
+
+					<!-- <input type="button" name="reset" value="Reset" 
+					onclick="clear()"> -->
+
+				 </td>
+						
+			</tr>
+			<tr>
+				<td>Result: </td>
+				<td id="result">
+
+					<input type="text" name="result_value">
+
+				</td>
+
+				<td>
+					<input type="button" id="resetBtn" value="Reset" onclick="this.form.reset();">
+				</td>			
+			</tr>
+
+		</table>
+
+
+	</form>
+
+<!-- 
+	<script type="text/javascript">
+		
+		function reset() 
+		{
+    
+        form_calculator.operator.checked = false;
+		}
+	</script> -->
+
+	<!-- <script>
+		function clear()
+		{
+			document.getElementById("myForm").reset();
+		}
+	</script>
+ -->
+</body>
+</html>
